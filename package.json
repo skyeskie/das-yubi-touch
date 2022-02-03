@@ -32,8 +32,8 @@
   "dependencies": {
     "daskeyboard-applet": "^2.7.12",
     "mocha": "^5.2.0",
-    "unix-dgram": "^2.0.4",
-    "request": "^2.88.0"
+    "request": "^2.88.0",
+    "unix-dgram": "^2.0.4"
   },
   "qConfig": {
     "geometry": {
@@ -46,17 +46,22 @@
         }
       }
     },
-    "questions": [{
-      "key": "defaultColor",
-      "label": "Choose the color of empty keys",
-      "help": "Keys that represent the current CPU usage will be lit up all others will be set to this color.",
-      "required": true,
-      "order": 1,
-      "value": "#000000",
-      "controlType": "color"
-    }],
+    "questions": [
+      {
+        "key": "defaultColor",
+        "label": "Choose the color of empty keys",
+        "help": "Keys that represent the current CPU usage will be lit up all others will be set to this color.",
+        "required": true,
+        "order": 1,
+        "value": "#000000",
+        "controlType": "color"
+      }
+    ],
     "applet": {
       "defaults": {}
     }
+  },
+  "devDependencies": {
+    "eslint": "^8.8.0"
   }
 }
